@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5b2b6f;
+    color: #f9eb3b;
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+.donut-container {
+    position: absolute;
+    top: 20px;
+    left: 190px;
+    margin: 0;
+    z-index: 10;
+}
+
+.donut {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.circle-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f9eb3b;
+    border-radius: 50%;
+}
+
+.circle-quarter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #c97b35;
+    clip-path: polygon(50% 50%, 0% 50%, 0% 0, 50% 0);
+}
+
+.donut::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background-color: #5b2b6f;
+    border-radius: 50%;
+}
+
+.donut-background {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 300px;
+    background-image: url('img/donuts.png');
+    background-repeat: repeat;
+    background-size: 160px 160px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+footer p {
+    margin: 20px 0;
+    font-size: 0.9em;
+    margin-top: 70px;
+    padding: 20px;
+    min-height: 50px;
+    position: relative;
+    z-index: 100;
+}
